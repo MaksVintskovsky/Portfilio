@@ -1,0 +1,221 @@
+.contacts{
+	background-color: #065A97;
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin-top: 25px;
+	
+	@media(min-width:768px){
+		padding-top: 35px;
+		padding-bottom: 60px;
+        margin-top: 50px;
+    }
+    @media(min-width:1200px){
+        padding-top: 50px;
+        padding-bottom: 75px;
+        margin-top: 80px;
+    }
+       @media(min-width:1400px){
+        background-image: url(../img/bg/cloud.png);
+    	}
+}
+
+.contacts_title{
+	color: #FFF;
+	h2{
+		font-size: 32px;
+		font-weight: 700;
+		
+		margin-bottom: 15px;
+		@media(min-width:768px){
+			font-size: 42px;
+			margin-bottom: 30px;
+    	}
+	}
+	p{
+		font-size: 16px;
+		line-height: 28px;
+		color: #FFF;
+		margin-bottom: 30px;
+	}
+}
+.contacts_item{
+		font-size: 16px;
+	a{
+		color: #FFF;
+		border-bottom: 1px dotted #fff;
+		text-decoration: none;
+        transition: color 0.2s ease-in;
+		&:hover{
+			color: #ffe400;
+			border-bottom: 1px dotted #ffe400;
+		}
+	}
+	#adress {
+		color: #FFF;
+	}
+	.dt{
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #A2D1F4;
+	}
+}
+.contacts_social{
+	margin-top: 0px;
+	font-size: 32px;
+	@media(min-width:1200px){
+        margin-top: 20px;
+    }
+	a{
+		color: #FFF;
+		text-decoration: none;
+		margin-right: 25px;
+		cursor: pointer;
+        transition: color 0.2s ease-in;
+		&:hover{
+			color: #ffe400;
+		}
+	}
+	
+
+}
+.contacts_social-title{
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #A2D1F4;
+		margin-bottom: 10px;
+}
+
+.form_title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	@media(min-width:1200px){
+        margin-top: 25px;
+    }
+}
+
+input {outline:none;}
+.form_contact-input, .form_contact-textarea {
+
+	color: #00599a;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	width: 100%;
+	border: none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	border: 3px solid #fff;
+	-webkit-transition: border-color 0.4s ease-in;
+	   -moz-transition: border-color 0.4s ease-in;
+	    -ms-transition: border-color 0.4s ease-in;
+	     -o-transition: border-color 0.4s ease-in;
+	        transition: border-color 0.4s ease-in;
+
+	&:hover,&:focus,&:active{
+		border: 3px solid #6faad6;
+	}
+}
+.half{
+	display: flex;
+	justify-content: space-between;
+}
+.half_item{
+	width: 49%;
+}
+.form_contact-textarea {
+	height: 128px;
+	outline:none;
+}
+@media(min-width:1200px){
+	.bg-pencil{
+		position: relative;
+		&:after{
+			content:"";
+			display: block;
+			position: absolute;
+			width: 203px;
+			height: 160px;
+			left: 65%;
+			top: 75%;
+	        background-image: url('../img/bg/pencil.png');
+			background-repeat: no-repeat;
+	    }
+	}
+}
+.form_contact-submit {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width: 300px;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 8px 47px 12px;
+	color: #FFF;
+	text-align: center;
+	border: 4px solid  #fff;
+	-webkit-border-radius: 40px;
+	        border-radius: 40px;
+	background-color: #065A97;
+	-webkit-transition: all 0.2s ease-in;
+	   -moz-transition: all 0.2s ease-in;
+	    -ms-transition: all 0.2s ease-in;
+	     -o-transition: all 0.2s ease-in;
+	        transition: all 0.2s ease-in;
+	&:hover, &:focus{
+		color: #065A97;
+		background-color: #fff;
+	}
+	&:active{
+		color: #ffe400;
+		background-color: #065A97;
+		border: 4px solid #ffe400;
+	}
+	@media(min-width:768px){
+        font-size: 20px;
+        display: inline-block;
+		width: auto;
+    }
+	@media(min-width:1200px){
+        font-size: 22px;
+    }
+}
+
+label.error{
+    text-align: center;
+    position: relative;
+    border: 2px solid #FFC0A4;
+    display: inline-block;
+//    display: block;
+    border-radius: 8px;
+    color: #FFC0A4;
+    padding: 0px 15px 3px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: -8px;
+    font-size: 14px;
+    
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 105%;
+        left: 4px;
+        
+        width: 0;
+        height: 0;
+//        margin-right: -8px;
+        border-bottom: 7px solid #FFC0A4;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        
+    }
+    
+}

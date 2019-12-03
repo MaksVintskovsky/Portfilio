@@ -26,7 +26,17 @@ $(document).ready(function(){
     
 // mixItUp
 
-    $('#portfolio-projects').mixItUp();
+    $('#portfolio-projects').mixItUp({
+        // selectors:{
+        //     filter:'.filter'
+        // }
+        // load:{
+        //     filter:'.gulp'
+        // },
+        // controls:{
+        //     activeClass:'active'
+        // }
+    });
 
  // FancyBox - galery
     $(".fancybox").fancybox({

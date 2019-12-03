@@ -28,11 +28,9 @@
         li{
             margin: 0;
             list-style-type: none;
-            
             @media(min-width:768px){
                 display: inline-block;
             }
-            
             span{
                 display: inline-block;
                 padding: 10px 27px 12px;
@@ -40,23 +38,32 @@
                 font-size: 16px;
                 font-weight: 700;
                 color: #cecece;
+                outline: none;
             
                 @media(min-width:768px){
                     padding: 18px 31px 18px;
                 }
                 @media(min-width:1200px){
                     margin-right: 11px;
-                }
-//                
-                &:active, &:focus, &:hover{
+                }  
+                &:focus, &:hover{
                     color: #000;
                     border: 2px solid @blue;
                     padding: 8px 25px 10px;
                     cursor: pointer;
-                    
                     @media(min-width:768px){
-                    padding: 16px 29px 16px;
+                        padding: 16px 29px 16px;
                     }
+                }
+            
+            }
+            .active{
+                color: #000;
+                border: 2px solid @blue;
+                padding: 8px 25px 10px;
+                cursor: pointer;
+                @media(min-width:768px){
+                    padding: 16px 29px 16px;
                 }
             }
         }

@@ -11,7 +11,6 @@ $(document).ready(function(){
         } else{
             navButton.addClass("active");
         }
-
         navButton.addClass('navigation__mobile-fixed');
     })
     
@@ -27,15 +26,6 @@ $(document).ready(function(){
 // mixItUp
 
     $('#portfolio-projects').mixItUp({
-        // selectors:{
-        //     filter:'.filter'
-        // }
-        // load:{
-        //     filter:'.gulp'
-        // },
-        // controls:{
-        //     activeClass:'active'
-        // }
     });
 
  // FancyBox - galery
